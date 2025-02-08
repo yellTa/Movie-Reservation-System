@@ -32,7 +32,7 @@ public class CommentService {
 
 			return productId;
 		} catch (Exception e) {
-			throw new CommentSaveException();
+			throw new CommentSaveException("CommentSaveException : " + e.getMessage());
 		}
 	}
 
